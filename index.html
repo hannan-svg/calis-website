@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beauty in Strength</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .container-with-bg {
+      position: relative;
+      background-color: #555;
+      color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    
+    .container-with-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('bg_kami.png');
+      background-size: cover;
+      opacity: 0.3;
+      z-index: -1;
+      border-radius: 5px;
+    }
+    
+    h1, h2, h3 {
+      color: #444;
+    }
+    
+    .container-with-bg h1,
+    .container-with-bg h2,
+    .container-with-bg h3 {
+      color: white;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+    
+    .founder-img, .coach-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
+      border: 3px solid white;
+    }
+    
+    .equipment {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .equipment-item {
+      width: 30%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    form {
+      background-color: #555;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    input, button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #666;
+      color: white;
+      border: 1px solid #777;
+      border-radius: 5px;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .experience-buttons {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    
+    .experience-buttons button {
+      margin: 0 5px;
+      background-color: #666;
+    }
+    
+    .experience-buttons button.selected {
+      background-color: #0066cc;
+    }
+    
+    .nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .nav a {
+      margin: 0 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    
+    .equipment-section {
+      background-image: url('https://images.unsplash.com/photo-1609892531008-f5b84df1b5d6');
+      background-size: cover;
+      padding: 40px 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    
+    .equipment-content {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-with-bg">
+    <div class="header">
+      <img src="logo_kami.png" alt="Logo" class="logo">
+      <h1>Beauty in Strength</h1>
+    </div>
+    
+    <div class="nav">
+      <a href="#about">About</a>
+      <a href="#founder">Founder</a>
+      <a href="#coaches">Coaches</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#signup">Sign Up</a>
+    </div>
+  </div>
+  
+  <div class="container" id="about">
+    <h2>About Us</h2>
+    <img src="sp.jpg" alt="Calisthenics" style="float: left; margin-right: 20px; width: 200px;">
+    <p>Beauty in Strength is a calisthenics training center. We help people get stronger using bodyweight exercises. Our methods are simple but effective. Join us to improve your strength and fitness!</p>
+  </div>
+  
+  <div class="container-with-bg" id="founder">
+    <h2>Our Founder</h2>
+    <img src="radhika_0.jpg" alt="Founder" class="founder-img">
+    <p>Radhika Putra Mandala started Beauty in Strength in 2020. He is a professional calisthenics athlete who wants to share his knowledge with others.</p>
+    <h3>Radhika Putra Mandala</h3>
+    <p>Founder of Beauty in Strength</p>
+  </div>
+  
+  <div class="container-with-bg" id="coaches">
+    <h2>Our Coaches</h2>
+    <img src="geraldo kwok.jpg" alt="Coach" class="coach-img">
+    <p>Geraldo Kwok is our head coach. He specializes in pull-ups and muscle-ups.</p>
+    <h3>Geraldo Kwok</h3>
+    <p>Head Coach</p>
+  </div>
+  
+  <section class="equipment-section" id="equipment">
+    <div class="equipment-content">
+      <h2>Our Equipment</h2>
+      <p>We sell high quality calisthenics equipment:</p>
+      
+      <div class="equipment">
+        <div class="equipment-item">
+          <img src="workout rings.jpg" alt="Rings">
+          <p>Workout Rings</p>
+        </div>
+        <div class="equipment-item">
+          <img src="dip system.jpg" alt="Dip Bars">
+          <p>Dip System</p>
+        </div>
+        <div class="equipment-item">
+          <img src="parallettes.jpg" alt="Parallettes">
+          <p>Parallettes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container-with-bg" id="signup">
+    <h2>Sign Up</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" required>
+      
+      <label>Age:</label>
+      <input type="number" required>
+      
+      <label>Email:</label>
+      <input type="email" required>
+      
+      <label>Experience Level:</label>
+      <div class="experience-buttons">
+        <button type="button">Beginner</button>
+        <button type="button">Intermediate</button>
+        <button type="button">Advanced</button>
+      </div>
+      
+      <button type="submit">Join Now</button>
+    </form>
+  </div>
+  
+  <script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for signing up! We will contact you soon.');
+      this.reset();
+      
+
+      document.querySelectorAll('.experience-buttons button').forEach(btn => {
+        btn.classList.remove('selected');
+      });
+    });
+    
+
+    const buttons = document.querySelectorAll('.experience-buttons button');
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        buttons.forEach(btn => btn.classList.remove('selected'));
+        this.classList.add('selected');
+      });
+    });
+  </script>
+</body>
+</html>
